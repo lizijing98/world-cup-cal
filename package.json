@@ -1,0 +1,16 @@
+{
+  "name": "world-cup-cal",
+  "version": "1.0.0",
+  "description": "世界杯赛程iCal文件",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Li Zijing",
+  "license": "ISC",
+  "dependencies": {
+    "moment-timezone": "^0.5.38",
+    "node-xlsx": "^0.21.0"
+  }
+}
