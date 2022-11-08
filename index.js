@@ -10,8 +10,8 @@ const VERSION = "VERSION:1.0\n";
 const PRODID = "PRODID:-//WorldCup//World Cup Calendar//zh-CN\n";
 const BEGIN_EVENT = "BEGIN:VEVENT\n";
 const SUMMARY = "SUMMARY:";
-const DTSTART = "DTSTART:";
-const DTEND = "DTEND:";
+const DTSTART = 'DTSTART;TZID="UTC+08:00";VALUE=DATE-TIME:';
+const DTEND = 'DTEND;TZID="UTC+08:00";VALUE=DATE-TIME:';
 const END_EVENT = "END:VEVENT\n";
 const END = "END:VCALENDAR\n";
 
