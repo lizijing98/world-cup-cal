@@ -1,8 +1,8 @@
 import xlsx from "node-xlsx";
 import moment from "moment";
 import fs from "fs";
+import { flagMap } from "./flagMap.js";
 
-// const timeFormat = "YYYY-MM-DD HH:mm:ss";
 const timeFormat = "YYYYMMDDTHHmmss";
 
 const BEGIN = "BEGIN:VCALENDAR\n";
@@ -31,11 +31,13 @@ sheets.forEach(function (sheet) {
 		}
 		var row = sheet["data"][rowId];
 		calData += BEGIN_EVENT;
-		var title = row[0];
-		calData += SUMMARY + title + "\n";
-		var beginTime = moment(new Date(row[1].getTime() + 43 * 1000)).format(timeFormat) + "Z";
+		var group = row[0];
+		var teamA = row[1];
+		var teamB = row[2];
+		calData += SUMMARY + group + "-" + row[1] + flagMap[row[1]] + "vs" + row[2] + flagMap[row[2]] + "\n";
+		var beginTime = moment(new Date(row[3].getTime() + 43 * 1000)).format(timeFormat) + "Z";
 		calData += DTSTART + beginTime + "\n";
-		var endTime = moment(new Date(row[2].getTime() + 43 * 1000)).format(timeFormat) + "Z";
+		var endTime = moment(new Date(row[4].getTime() + 43 * 1000)).format(timeFormat) + "Z";
 		calData += DTEND + endTime + "\n";
 		calData += END_EVENT;
 	}
