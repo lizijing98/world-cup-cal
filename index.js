@@ -6,8 +6,8 @@ import { flagMap } from "./flagMap.js";
 const timeFormat = "YYYYMMDDTHHmmss";
 
 const BEGIN = "BEGIN:VCALENDAR\n";
-const VERSION = "VERSION:1.0\n";
-const PRODID = "PRODID:-//WorldCup//World Cup Calendar//zh-CN\n";
+const VERSION = "VERSION:2.0\n";
+const PRODID = "PRODID:-//WorldCup/World Cup Calendar//zh-CN\n";
 const BEGIN_EVENT = "BEGIN:VEVENT\n";
 const SUMMARY = "SUMMARY:";
 const DTSTART = 'DTSTART;TZID="UTC+08:00";VALUE=DATE-TIME:';
