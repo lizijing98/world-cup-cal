@@ -50,7 +50,14 @@ sheets.forEach(function (sheet) {
 
 calData += constant.END;
 
-fs.writeFile("WorldCupSchedule.ics", calData, function (err) {
+fs.mkdir("./dist", { recursive: true }, (err) => {
+	if (err) throw err;
+	fs.writeFile("./dist/WorldCupSchedule.ics", calData, function (err) {
+		if (err) throw err;
+		console.log("ics created in dist successfully");
+	});
+});
+fs.writeFile("./WorldCupSchedule.ics", calData, function (err) {
 	if (err) throw err;
 	console.log("ics created successfully");
 });
