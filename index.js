@@ -25,7 +25,16 @@ sheets.forEach(function (sheet) {
 		var group = row[0];
 		var teamA = row[1];
 		var teamB = row[2];
-		calData += constant.SUMMARY + group + "-" + teamA + flagMap.teamA + "vs" + teamB + flagMap.teamB + "\n";
+		calData +=
+			constant.SUMMARY +
+			group +
+			"-" +
+			teamA +
+			(flagMap[teamA] ? flagMap[teamA] : flagMap.other) +
+			"vs" +
+			teamB +
+			(flagMap[teamB] ? flagMap[teamB] : flagMap.other) +
+			"\n";
 		var beginTime = moment(new Date(row[3].getTime() + 43 * 1000)).format(timeFormat) + "Z";
 		calData += constant.DTSTART + beginTime + "\n";
 		var endTime = moment(new Date(row[4].getTime() + 43 * 1000)).format(timeFormat) + "Z";
@@ -41,7 +50,7 @@ sheets.forEach(function (sheet) {
 
 calData += constant.END;
 
-fs.writeFile("WorldCupSchedule1.ics", calData, function (err) {
+fs.writeFile("WorldCupSchedule.ics", calData, function (err) {
 	if (err) throw err;
 	console.log("ics created successfully");
 });
