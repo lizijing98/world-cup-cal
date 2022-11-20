@@ -11,7 +11,7 @@ var sheets = xlsx.parse("WorldCupSchedule.xlsx", {
 	cellDates: true,
 });
 
-var calData = constant.BEGIN + constant.VERSION + constant.PRODID + constant.CALSCALE + constant.CALNAME + constant.TIMEZONE + constant.APPLE_COLOR;
+var calData = constant.BEGIN + constant.VERSION + constant.PRODID + constant.CALSCALE + constant.CALNAME + constant.APPLE_COLOR;
 
 // 遍历 sheet
 sheets.forEach(function (sheet) {
@@ -35,9 +35,9 @@ sheets.forEach(function (sheet) {
 			teamB +
 			(flagMap[teamB] ? flagMap[teamB] : flagMap.other) +
 			"\n";
-		var beginTime = moment(new Date(row[3].getTime() + 43 * 1000)).format(timeFormat) + "Z";
+		var beginTime = moment(new Date(row[6].getTime() + 43 * 1000)).format(timeFormat) + "Z";
 		calData += constant.DTSTART + beginTime + "\n";
-		var endTime = moment(new Date(row[4].getTime() + 43 * 1000)).format(timeFormat) + "Z";
+		var endTime = moment(new Date(row[7].getTime() + 43 * 1000)).format(timeFormat) + "Z";
 		calData += constant.DTEND + endTime + "\n";
 		if (row[5]) {
 			calData += constant.DESCRIPTION + row[5] + "\n" + constant.DESC_TEXT;
