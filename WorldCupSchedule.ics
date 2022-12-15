@@ -341,49 +341,49 @@ DTEND:20221206T210000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1/4 决赛(赛事57)-赛事49胜方❔vs赛事50胜方❔
+SUMMARY:1/4 决赛(赛事57)-荷兰🇳🇱vs阿根廷🇦🇷​
 DTSTART:20221209T190000Z
 DTEND:20221209T210000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1/4 决赛(赛事58)-赛事53胜方❔vs赛事54胜方❔
-DTSTART:20221209T150000Z
-DTEND:20221209T170000Z
-DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:1/4 决赛(赛事59)-赛事51胜方❔vs赛事52胜方❔
+SUMMARY:1/4 决赛(赛事58)-法国🇫🇷vs英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿​
 DTSTART:20221210T190000Z
 DTEND:20221210T210000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1/4 决赛(赛事60)-赛事55胜方❔vs赛事56胜方❔
+SUMMARY:1/4 决赛(赛事59)-克罗地亚🇭🇷vs巴西🇧🇷​​
+DTSTART:20221209T150000Z
+DTEND:20221209T170000Z
+DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4 决赛(赛事60)-摩洛哥🇲🇦vs葡萄牙🇵🇹
 DTSTART:20221210T150000Z
 DTEND:20221210T170000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:半决赛(赛事61)-赛事57胜方❔vs赛事58胜方❔
+SUMMARY:半决赛(赛事61)-阿根廷🇦🇷​vs克罗地亚🇭🇷
 DTSTART:20221213T190000Z
 DTEND:20221213T210000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:半决赛(赛事62)-赛事59胜方❔vs赛事60胜方❔
+SUMMARY:半决赛(赛事62)-法国🇫🇷vs摩洛哥🇲🇦
 DTSTART:20221214T190000Z
 DTEND:20221214T210000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:季军赛(赛事63)-赛事61负方❔vs赛事62负方❔
+SUMMARY:季军赛-克罗地亚🇭🇷vs摩洛哥🇲🇦
 DTSTART:20221217T150000Z
 DTEND:20221217T170000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:决赛(赛事64)-赛事61胜方❔vs赛事62胜方❔
+SUMMARY:决赛-阿根廷🇦🇷​vs法国🇫🇷
 DTSTART:20221218T150000Z
 DTEND:20221218T170000Z
 DESCRIPTION:代码开源地址:https://github.com/lizijing98/world-cup-cal
