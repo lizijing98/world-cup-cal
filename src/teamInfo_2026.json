@@ -1,0 +1,254 @@
+[
+  {
+    "nameCn": "墨西哥",
+    "nameEn": "Mexico",
+    "flag": "🇲🇽",
+    "group": "Group A"
+  },
+  {
+    "nameCn": "南非",
+    "nameEn": "South Africa",
+    "flag": "🇿🇦",
+    "group": "Group A"
+  },
+  {
+    "nameCn": "韩国",
+    "nameEn": "South Korea",
+    "flag": "🇰🇷",
+    "group": "Group A"
+  },
+  {
+    "nameCn": "加拿大",
+    "nameEn": "Canada",
+    "flag": "🇨🇦",
+    "group": "Group B"
+  },
+  {
+    "nameCn": "卡塔尔",
+    "nameEn": "Qatar",
+    "flag": "🇶🇦",
+    "group": "Group B"
+  },
+  {
+    "nameCn": "瑞士",
+    "nameEn": "Switzerland",
+    "flag": "🇨🇭",
+    "group": "Group B"
+  },
+  {
+    "nameCn": "巴西",
+    "nameEn": "Brazil",
+    "flag": "🇧🇷",
+    "group": "Group C"
+  },
+  {
+    "nameCn": "摩洛哥",
+    "nameEn": "Morocco",
+    "flag": "🇲🇦",
+    "group": "Group C"
+  },
+  {
+    "nameCn": "海地",
+    "nameEn": "Haiti",
+    "flag": "🇭🇹",
+    "group": "Group C"
+  },
+  {
+    "nameCn": "苏格兰",
+    "nameEn": "Scotland",
+    "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "group": "Group C"
+  },
+  {
+    "nameCn": "美国",
+    "nameEn": "United States",
+    "flag": "🇺🇸",
+    "group": "Group D"
+  },
+  {
+    "nameCn": "巴拉圭",
+    "nameEn": "Paraguay",
+    "flag": "🇵🇾",
+    "group": "Group D"
+  },
+  {
+    "nameCn": "澳大利亚",
+    "nameEn": "Australia",
+    "flag": "🇦🇺",
+    "group": "Group D"
+  },
+  {
+    "nameCn": "德国",
+    "nameEn": "Germany",
+    "flag": "🇩🇪",
+    "group": "Group E"
+  },
+  {
+    "nameCn": "库拉索",
+    "nameEn": "Curaçao",
+    "flag": "🇨🇼",
+    "group": "Group E"
+  },
+  {
+    "nameCn": "科特迪瓦",
+    "nameEn": "Ivory Coast",
+    "flag": "🇨🇮",
+    "group": "Group E"
+  },
+  {
+    "nameCn": "厄瓜多尔",
+    "nameEn": "Ecuador",
+    "flag": "🇪🇨",
+    "group": "Group E"
+  },
+  {
+    "nameCn": "荷兰",
+    "nameEn": "Netherlands",
+    "flag": "🇳🇱",
+    "group": "Group F"
+  },
+  {
+    "nameCn": "日本",
+    "nameEn": "Japan",
+    "flag": "🇯🇵",
+    "group": "Group F"
+  },
+  {
+    "nameCn": "突尼斯",
+    "nameEn": "Tunisia",
+    "flag": "🇹🇳",
+    "group": "Group F"
+  },
+  {
+    "nameCn": "比利时",
+    "nameEn": "Belgium",
+    "flag": "🇧🇪",
+    "group": "Group G"
+  },
+  {
+    "nameCn": "埃及",
+    "nameEn": "Egypt",
+    "flag": "🇪🇬",
+    "group": "Group G"
+  },
+  {
+    "nameCn": "伊朗",
+    "nameEn": "Iran",
+    "flag": "🇮🇷",
+    "group": "Group G"
+  },
+  {
+    "nameCn": "新西兰",
+    "nameEn": "New Zealand",
+    "flag": "🇳🇿",
+    "group": "Group G"
+  },
+  {
+    "nameCn": "西班牙",
+    "nameEn": "Spain",
+    "flag": "🇪🇸",
+    "group": "Group H"
+  },
+  {
+    "nameCn": "佛得角",
+    "nameEn": "Cape Verde",
+    "flag": "🇨🇻",
+    "group": "Group H"
+  },
+  {
+    "nameCn": "沙特阿拉伯",
+    "nameEn": "Saudi Arabia",
+    "flag": "🇸🇦",
+    "group": "Group H"
+  },
+  {
+    "nameCn": "乌拉圭",
+    "nameEn": "Uruguay",
+    "flag": "🇺🇾",
+    "group": "Group H"
+  },
+  {
+    "nameCn": "法国",
+    "nameEn": "France",
+    "flag": "🇫🇷",
+    "group": "Group I"
+  },
+  {
+    "nameCn": "塞内加尔",
+    "nameEn": "Senegal",
+    "flag": "🇸🇳",
+    "group": "Group I"
+  },
+  {
+    "nameCn": "挪威",
+    "nameEn": "Norway",
+    "flag": "🇳🇴",
+    "group": "Group I"
+  },
+  {
+    "nameCn": "阿根廷",
+    "nameEn": "Argentina",
+    "flag": "🇦🇷",
+    "group": "Group J"
+  },
+  {
+    "nameCn": "阿尔及利亚",
+    "nameEn": "Algeria",
+    "flag": "🇩🇿",
+    "group": "Group J"
+  },
+  {
+    "nameCn": "奥地利",
+    "nameEn": "Austria",
+    "flag": "🇦🇹",
+    "group": "Group J"
+  },
+  {
+    "nameCn": "约旦",
+    "nameEn": "Jordan",
+    "flag": "🇯🇴",
+    "group": "Group J"
+  },
+  {
+    "nameCn": "葡萄牙",
+    "nameEn": "Portugal",
+    "flag": "🇵🇹",
+    "group": "Group K"
+  },
+  {
+    "nameCn": "乌兹别克斯坦",
+    "nameEn": "Uzbekistan",
+    "flag": "🇺🇿",
+    "group": "Group K"
+  },
+  {
+    "nameCn": "哥伦比亚",
+    "nameEn": "Colombia",
+    "flag": "🇨🇴",
+    "group": "Group K"
+  },
+  {
+    "nameCn": "英格兰",
+    "nameEn": "England",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "group": "Group L"
+  },
+  {
+    "nameCn": "克罗地亚",
+    "nameEn": "Croatia",
+    "flag": "🇭🇷",
+    "group": "Group L"
+  },
+  {
+    "nameCn": "加纳",
+    "nameEn": "Ghana",
+    "flag": "🇬🇭",
+    "group": "Group L"
+  },
+  {
+    "nameCn": "巴拿马",
+    "nameEn": "Panama",
+    "flag": "🇵🇦",
+    "group": "Group L"
+  }
+]
