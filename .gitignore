@@ -6,9 +6,6 @@ dist/
 .idea
 .vscode
 
-package-lock.json
-yarn.lock
-
 .env
 .env.*
 cache/
