@@ -1,8 +1,12 @@
+/**
+ * @deprecated
+ * 从Excel文件中解析出2026年世界杯的日程
+ */
 import xlsx from 'node-xlsx';
 import moment from 'moment';
 import fs from 'fs';
-import flagMap from './src/flagMap.js';
-import constant from './src/constant.js';
+import flagMap from '../flagMap.js';
+import constant from './constant.js';
 
 const timeFormat = 'YYYYMMDDTHHmmss';
 

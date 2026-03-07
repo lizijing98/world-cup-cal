@@ -8,3 +8,8 @@ dist/
 
 package-lock.json
 yarn.lock
+
+.env
+.env.*
+cache/
+docs/
