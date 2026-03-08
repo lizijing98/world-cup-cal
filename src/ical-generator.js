@@ -56,7 +56,7 @@ export function generateICalFile(matches, season = 2026) {
     new Date(a.utcDate) - new Date(b.utcDate)
   );
 
-  const updateTime = moment().format('YYYY/MM/DD HH:mm:ss');
+  const updateTime = moment().tz('Asia/Shanghai').format('YYYY/MM/DD HH:mm:ss');
 
   sortedMatches.forEach(match => {
     if (!match.utcDate || !match.homeTeam || !match.awayTeam) {
