@@ -30,6 +30,16 @@ function formatMatchResult(match) {
 }
 
 /**
+ * 格式化 iCal 文本，确保换行符兼容性
+ * @function formatICalText
+ * @param {string} text - 原始文本
+ * @returns {string} 格式化后的 iCal 文本
+ */
+function formatICalText(text) {
+  return text.replace(/\n/g, '\\n');
+}
+
+/**
  * 生成iCal格式的日历文件内容
  * @function generateICalFile
  * @param {Array<Object>} matches - 比赛数据数组
@@ -56,7 +66,7 @@ export function generateICalFile(matches, season = 2026) {
     new Date(a.utcDate) - new Date(b.utcDate)
   );
 
-  const updateTime = moment().tz('Asia/Shanghai').format('YYYY/MM/DD HH:mm:ss');
+  const updateTime = moment().tz('Asia/Shanghai').format('YYYY/MM/DD');
 
   sortedMatches.forEach(match => {
     if (!match.utcDate || !match.homeTeam || !match.awayTeam) {
@@ -78,22 +88,22 @@ export function generateICalFile(matches, season = 2026) {
     let description = '';
     
     if (match.stage) {
-      description += `阶段: ${getStageName(match.stage)}\n`;
+      description += `阶段: ${getStageName(match.stage)}\\n`;
     }
     
     if (match.matchday) {
-      description += `轮次: 第${match.matchday}轮\n`;
+      description += `轮次: 第${match.matchday}轮\\n`;
     }
 
     const matchResult = formatMatchResult(match);
     if (matchResult) {
-      description += `比分: ${matchResult}\n`;
+      description += `比分: ${matchResult}\\n`;
     }
 
-    description += `更新时间: ${updateTime}\n`;
+    description += `更新时间: ${updateTime}\\n`;
     description += constant.DESC_TEXT;
     
-    calData += constant.DESCRIPTION + description;
+    calData += constant.DESCRIPTION + formatICalText(description);
 
     calData += constant.END_EVENT;
   });
