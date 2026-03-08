@@ -20,24 +20,13 @@ function formatMatchResult(match) {
   const awayTeam = getTeamMapping(match.awayTeam?.name);
   const homeScore = match.score.fullTime?.home;
   const awayScore = match.score.fullTime?.away;
-  const winner = match.score.winner;
 
   if (homeScore === null || homeScore === undefined || 
       awayScore === null || awayScore === undefined) {
     return '';
   }
 
-  let result = `比分: ${homeTeam.nameCn} ${homeScore} - ${awayScore} ${awayTeam.nameCn}\n`;
-
-  if (winner === 'HOME_TEAM') {
-    result += `胜者: ${homeTeam.nameCn} ${homeTeam.flag}\n`;
-  } else if (winner === 'AWAY_TEAM') {
-    result += `胜者: ${awayTeam.nameCn} ${awayTeam.flag}\n`;
-  } else if (winner === 'DRAW') {
-    result += `结果: 平局\n`;
-  }
-
-  return result;
+  return `${homeTeam.nameCn}${homeTeam.flag} ${homeScore}:${awayScore} ${awayTeam.nameCn}${awayTeam.flag}`;
 }
 
 /**
@@ -67,6 +56,8 @@ export function generateICalFile(matches, season = 2026) {
     new Date(a.utcDate) - new Date(b.utcDate)
   );
 
+  const updateTime = moment().format('YYYY/MM/DD HH:mm:ss');
+
   sortedMatches.forEach(match => {
     if (!match.utcDate || !match.homeTeam || !match.awayTeam) {
       console.warn('跳过无效比赛:', match.id);
@@ -93,25 +84,13 @@ export function generateICalFile(matches, season = 2026) {
     if (match.matchday) {
       description += `轮次: 第${match.matchday}轮\n`;
     }
-    
-    if (match.status && match.status !== 'TIMED') {
-      const statusMap = {
-        'FINISHED': '已完赛',
-        'IN_PLAY': '进行中',
-        'PAUSED': '暂停',
-        'SCHEDULED': '未开始',
-        'POSTPONED': '延期',
-        'CANCELLED': '取消',
-        'SUSPENDED': '中止'
-      };
-      description += `状态: ${statusMap[match.status] || match.status}\n`;
-    }
 
     const matchResult = formatMatchResult(match);
     if (matchResult) {
-      description += matchResult;
+      description += `比分: ${matchResult}\n`;
     }
-    
+
+    description += `更新时间: ${updateTime}\n`;
     description += constant.DESC_TEXT;
     
     calData += constant.DESCRIPTION + description;
