@@ -11,13 +11,13 @@ DTEND:20260611T210000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:A组-韩国🇰🇷vsCzechia❔
+SUMMARY:A组-韩国🇰🇷vs捷克🇨🇿
 DTSTART:20260612T020000Z
 DTEND:20260612T040000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:B组-加拿大🇨🇦vsBosnia-Herzegovina❔
+SUMMARY:B组-加拿大🇨🇦vs波黑🇧🇦
 DTSTART:20260612T190000Z
 DTEND:20260612T210000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
@@ -29,7 +29,7 @@ DTEND:20260613T030000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:D组-澳大利亚🇦🇺vsTurkey❔
+SUMMARY:D组-澳大利亚🇦🇺vs土耳其🇹🇷
 DTSTART:20260613T040000Z
 DTEND:20260613T060000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
@@ -71,7 +71,7 @@ DTEND:20260615T010000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:F组-Sweden❔vs突尼斯🇹🇳
+SUMMARY:F组-瑞典🇸🇪vs突尼斯🇹🇳
 DTSTART:20260615T020000Z
 DTEND:20260615T040000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
@@ -149,13 +149,13 @@ DTEND:20260618T040000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:A组-Czechia❔vs南非🇿🇦
+SUMMARY:A组-捷克🇨🇿vs南非🇿🇦
 DTSTART:20260618T160000Z
 DTEND:20260618T180000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:B组-瑞士🇨🇭vsBosnia-Herzegovina❔
+SUMMARY:B组-瑞士🇨🇭vs波黑🇧🇦
 DTSTART:20260618T190000Z
 DTEND:20260618T210000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
@@ -191,13 +191,13 @@ DTEND:20260620T030000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:D组-Turkey❔vs巴拉圭🇵🇾
+SUMMARY:D组-土耳其🇹🇷vs巴拉圭🇵🇾
 DTSTART:20260620T040000Z
 DTEND:20260620T060000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:F组-荷兰🇳🇱vsSweden❔
+SUMMARY:F组-荷兰🇳🇱vs瑞典🇸🇪
 DTSTART:20260620T170000Z
 DTEND:20260620T190000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
@@ -299,7 +299,7 @@ DTEND:20260624T210000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第3轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:B组-Bosnia-Herzegovina❔vs卡塔尔🇶🇦
+SUMMARY:B组-波黑🇧🇦vs卡塔尔🇶🇦
 DTSTART:20260624T190000Z
 DTEND:20260624T210000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第3轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
@@ -317,7 +317,7 @@ DTEND:20260625T000000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第3轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:A组-Czechia❔vs墨西哥🇲🇽
+SUMMARY:A组-捷克🇨🇿vs墨西哥🇲🇽
 DTSTART:20260625T010000Z
 DTEND:20260625T030000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第3轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
@@ -347,13 +347,13 @@ DTEND:20260626T010000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第3轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:F组-日本🇯🇵vsSweden❔
+SUMMARY:F组-日本🇯🇵vs瑞典🇸🇪
 DTSTART:20260625T230000Z
 DTEND:20260626T010000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第3轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:D组-Turkey❔vs美国🇺🇸
+SUMMARY:D组-土耳其🇹🇷vs美国🇺🇸
 DTSTART:20260626T020000Z
 DTEND:20260626T040000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第3轮\n更新时间: 2026/04/01\n开源地址:https://github.com/lizijing98/world-cup-cal
