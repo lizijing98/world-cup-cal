@@ -18,6 +18,12 @@
     "group": "Group A"
   },
   {
+    "nameCn": "捷克",
+    "nameEn": "Czechia",
+    "flag": "🇨🇿",
+    "group": "Group A"
+  },
+  {
     "nameCn": "加拿大",
     "nameEn": "Canada",
     "flag": "🇨🇦",
@@ -33,6 +39,12 @@
     "nameCn": "瑞士",
     "nameEn": "Switzerland",
     "flag": "🇨🇭",
+    "group": "Group B"
+  },
+  {
+    "nameCn": "波黑",
+    "nameEn": "Bosnia-Herzegovina",
+    "flag": "🇧🇦",
     "group": "Group B"
   },
   {
@@ -78,6 +90,12 @@
     "group": "Group D"
   },
   {
+    "nameCn": "土耳其",
+    "nameEn": "Turkey",
+    "flag": "🇹🇷",
+    "group": "Group D"
+  },
+  {
     "nameCn": "德国",
     "nameEn": "Germany",
     "flag": "🇩🇪",
@@ -117,6 +135,12 @@
     "nameCn": "突尼斯",
     "nameEn": "Tunisia",
     "flag": "🇹🇳",
+    "group": "Group F"
+  },
+  {
+    "nameCn": "瑞典",
+    "nameEn": "Sweden",
+    "flag": "🇸🇪",
     "group": "Group F"
   },
   {
