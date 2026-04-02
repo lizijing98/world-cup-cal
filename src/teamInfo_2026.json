@@ -210,6 +210,12 @@
     "group": "Group I"
   },
   {
+    "nameCn": "伊拉克",
+    "nameEn": "Iraq",
+    "flag": "🇮🇶",
+    "group": "Group I"
+  },
+  {
     "nameCn": "阿根廷",
     "nameEn": "Argentina",
     "flag": "🇦🇷",
@@ -243,6 +249,12 @@
     "nameCn": "乌兹别克斯坦",
     "nameEn": "Uzbekistan",
     "flag": "🇺🇿",
+    "group": "Group K"
+  },
+  {
+    "nameCn": "刚果",
+    "nameEn": "Congo DR",
+    "flag": "🇨🇬",
     "group": "Group K"
   },
   {
