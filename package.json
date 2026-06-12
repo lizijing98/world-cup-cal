@@ -1,6 +1,6 @@
 {
   "name": "world-cup-cal",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "世界杯赛程iCal文件",
   "main": "index.js",
   "type": "module",
@@ -9,6 +9,13 @@
     "start": "node index.js"
   },
   "author": "Li Zijing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lizijing98/world-cup-cal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lizijing98/world-cup-cal/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "moment-timezone": "^0.5.38",

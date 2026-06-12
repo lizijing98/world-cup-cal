@@ -10,6 +10,7 @@ const TIME_FORMAT = 'YYYYMMDDTHHmmss';
  * @function formatMatchResult
  * @param {Object} match - 比赛对象
  * @returns {string} 格式化的比赛结果字符串
+ * @example '墨西哥🇲🇽 2:0 南非🇿🇦'
  */
 function formatMatchResult(match) {
   if (match.status !== 'FINISHED' || !match.score) {
@@ -74,37 +75,29 @@ export function generateICalFile(matches, season = 2026) {
       return;
     }
 
-    calData += constant.BEGIN_EVENT;
-
-    const title = formatMatchTitle(match);
-    calData += constant.SUMMARY + title + '\n';
-
     const startTime = moment.utc(match.utcDate).format(TIME_FORMAT) + 'Z';
     const endTime = moment.utc(match.utcDate).add(2, 'hours').format(TIME_FORMAT) + 'Z';
-    
-    calData += constant.DTSTART + startTime + '\n';
-    calData += constant.DTEND + endTime + '\n';
-
     let description = '';
-    
     if (match.stage) {
       description += `阶段: ${getStageName(match.stage)}\n`;
     }
-    
     if (match.matchday) {
       description += `轮次: 第${match.matchday}轮\n`;
     }
-
     const matchResult = formatMatchResult(match);
     if (matchResult) {
       description += `比分: ${matchResult}\n`;
     }
-
+    
     description += `更新时间: ${updateTime}\n`;
     description += `开源地址:https://github.com/lizijing98/world-cup-cal`;
     
+    const title = formatMatchTitle(match, matchResult);
+    calData += constant.BEGIN_EVENT;
+    calData += constant.SUMMARY + title + '\n';
+    calData += constant.DTSTART + startTime + '\n';
+    calData += constant.DTEND + endTime + '\n';
     calData += constant.DESCRIPTION + formatICalText(description) + '\n';
-
     calData += constant.END_EVENT;
   });
 

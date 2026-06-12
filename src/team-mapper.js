@@ -16,7 +16,7 @@ function loadTeamInfo() {
   try {
     const teamInfoPath = path.join(process.cwd(), 'src', 'teamInfo_2026.json');
     const teamInfo = JSON.parse(fs.readFileSync(teamInfoPath, 'utf8'));
-    
+
     teamInfoCache = teamInfo;
     return teamInfo;
   } catch (error) {
@@ -54,22 +54,22 @@ export function getTeamMapping(teamName) {
   }
 
   const teamInfo = loadTeamInfo();
-  
+
   const normalizedName = TEAM_ALIASES[teamName] || teamName;
-  
-  const team = teamInfo.find(t => 
-    t.nameEn === normalizedName || 
+
+  const team = teamInfo.find(t =>
+    t.nameEn === normalizedName ||
     t.nameEn.toLowerCase() === normalizedName.toLowerCase() ||
     t.nameCn === normalizedName
   );
-  
+
   if (team) {
     return {
       nameCn: team.nameCn,
       flag: team.flag
     };
   }
-  
+
   console.warn(`未找到队伍映射: ${teamName}`);
   return {
     nameCn: teamName,
@@ -85,13 +85,13 @@ export function getTeamMapping(teamName) {
 export function buildTeamNameMap() {
   const teamInfo = loadTeamInfo();
   const nameMap = {};
-  
+
   teamInfo.forEach(team => {
     nameMap[team.nameEn] = {
       nameCn: team.nameCn,
       flag: team.flag
     };
-    
+
     if (team.nameEn.toLowerCase() !== team.nameEn) {
       nameMap[team.nameEn.toLowerCase()] = {
         nameCn: team.nameCn,
@@ -99,7 +99,7 @@ export function buildTeamNameMap() {
       };
     }
   });
-  
+
   return nameMap;
 }
 
@@ -115,17 +115,17 @@ export function getGroupLetter(groupName) {
   if (!groupName) {
     return '?';
   }
-  
+
   const match = groupName.match(/GROUP_([A-Z])/);
   if (match) {
     return match[1];
   }
-  
+
   if (groupName.includes('GROUP')) {
     const letter = groupName.replace('GROUP', '').replace('_', '').trim();
     return letter || '?';
   }
-  
+
   return groupName;
 }
 
@@ -148,7 +148,7 @@ export function getStageName(stage) {
     'THIRD_PLACE': '季军赛',
     'FINAL': '决赛'
   };
-  
+
   return stageMap[stage] || stage || '比赛';
 }
 
@@ -167,21 +167,21 @@ export function getStageName(stage) {
  * const title = formatMatchTitle(match);
  * // 返回: 'A组-墨西哥🇲🇽vs南非🇿🇦'
  */
-export function formatMatchTitle(match) {
+export function formatMatchTitle(match, matchResult) {
   const homeTeam = getTeamMapping(match.homeTeam?.name);
   const awayTeam = getTeamMapping(match.awayTeam?.name);
   const group = getGroupLetter(match.group);
   const stage = getStageName(match.stage);
-  
+
   let title = '';
-  
+
   if (match.stage === 'GROUP_STAGE') {
     title = `${group}组-`;
   } else {
     title = `${stage}-`;
   }
-  
-  title += `${homeTeam.nameCn}${homeTeam.flag}vs${awayTeam.nameCn}${awayTeam.flag}`;
-  
+
+  title += matchResult ? matchResult : `${homeTeam.nameCn}${homeTeam.flag}vs${awayTeam.nameCn}${awayTeam.flag}`;
+
   return title;
 }
