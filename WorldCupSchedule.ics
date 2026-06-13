@@ -17,16 +17,16 @@ DTEND:20260612T040000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 韩国🇰🇷 2:1 捷克🇨🇿\n更新时间: 2026/06/13\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:B组-加拿大🇨🇦vs波黑🇧🇦
+SUMMARY:B组-加拿大🇨🇦 1:1 波黑🇧🇦
 DTSTART:20260612T190000Z
 DTEND:20260612T210000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/06/13\n开源地址:https://github.com/lizijing98/world-cup-cal
+DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 加拿大🇨🇦 1:1 波黑🇧🇦\n更新时间: 2026/06/13\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:D组-美国🇺🇸vs巴拉圭🇵🇾
+SUMMARY:D组-美国🇺🇸 4:1 巴拉圭🇵🇾
 DTSTART:20260613T010000Z
 DTEND:20260613T030000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/06/13\n开源地址:https://github.com/lizijing98/world-cup-cal
+DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 美国🇺🇸 4:1 巴拉圭🇵🇾\n更新时间: 2026/06/13\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:B组-卡塔尔🇶🇦vs瑞士🇨🇭
