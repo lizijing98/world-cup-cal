@@ -2,7 +2,7 @@ name: Update World Cup Calendar
 
 on:
   schedule:
-    - cron: '30 4 * * *'
+    - cron: '15 3 * * *'
   workflow_dispatch:
   push:
     branches:

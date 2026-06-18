@@ -137,10 +137,10 @@ DTEND:20260617T220000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿 4:2 克罗地亚🇭🇷\n更新时间: 2026/06/18\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:L组-加纳🇬🇭vs巴拿马🇵🇦
+SUMMARY:L组-加纳🇬🇭 1:0 巴拿马🇵🇦
 DTSTART:20260617T230000Z
 DTEND:20260618T010000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/06/18\n开源地址:https://github.com/lizijing98/world-cup-cal
+DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 加纳🇬🇭 1:0 巴拿马🇵🇦\n更新时间: 2026/06/18\n开源地址:https://github.com/lizijing98/world-cup-cal
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:K组-乌兹别克斯坦🇺🇿 1:3 哥伦比亚🇨🇴
