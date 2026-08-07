@@ -14,7 +14,28 @@ on:
       - 'package.json'
 
 jobs:
+  check-expiry:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+
+    steps:
+      - name: Check expiry date for scheduled runs
+        id: check
+        run: |
+          CURRENT_DATE=$(date -u +%Y-%m-%d)
+          EXPIRY_DATE="2026-07-22"
+          if [[ "$GITHUB_EVENT_NAME" == "schedule" && "$CURRENT_DATE" > "$EXPIRY_DATE" ]]; then
+            echo "已超过 2026年7月22日，跳过本次定时更新"
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "允许执行本次更新"
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
   update-calendar:
+    needs: check-expiry
+    if: needs.check-expiry.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     
     steps:
@@ -23,17 +44,6 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Check expiry date (stop after 2026-07-22)
-        id: check_date
-        run: |
-          CURRENT_DATE=$(date +%Y-%m-%d)
-          EXPIRY_DATE="2026-07-22"
-          if [ "$CURRENT_DATE" \> "$EXPIRY_DATE" ]; then
-            echo "已超过 2026年7月22日，停止执行定时任务"
-            exit 0
-          fi
-          echo "当前日期 $CURRENT_DATE 在有效期内，继续执行"
-      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -71,7 +81,8 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           echo "正在刷新 jsDelivr 缓存..."
-          curl -X POST "https://purge.jsdelivr.net/gh/lizijing98/world-cup-cal@master/WorldCupSchedule.ics"
+          curl --fail-with-body --silent --show-error \
+            "https://purge.jsdelivr.net/gh/lizijing98/world-cup-cal@master/WorldCupSchedule.ics"
           echo "缓存刷新请求已发送"
       
       - name: Create issue on failure
